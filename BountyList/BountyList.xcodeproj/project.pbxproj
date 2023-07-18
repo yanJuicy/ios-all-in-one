@@ -14,6 +14,7 @@
 		E9A3FFBE2A653C9C0041E43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A3FFBD2A653C9C0041E43E /* Assets.xcassets */; };
 		E9A3FFC12A653C9C0041E43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A3FFBF2A653C9C0041E43E /* LaunchScreen.storyboard */; };
 		E9A3FFC92A6590F20041E43E /* BountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3FFC82A6590F20041E43E /* BountyViewController.swift */; };
+		E9D7D0822A66AF0C003557C2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D7D0812A66AF0C003557C2 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E9A3FFC02A653C9C0041E43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9A3FFC22A653C9C0041E43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9A3FFC82A6590F20041E43E /* BountyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewController.swift; sourceTree = "<group>"; };
+		E9D7D0812A66AF0C003557C2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E9A3FFBF2A653C9C0041E43E /* LaunchScreen.storyboard */,
 				E9A3FFC22A653C9C0041E43E /* Info.plist */,
 				E9A3FFC82A6590F20041E43E /* BountyViewController.swift */,
+				E9D7D0812A66AF0C003557C2 /* DetailViewController.swift */,
 			);
 			path = BountyList;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				E9A3FFB92A653C970041E43E /* ViewController.swift in Sources */,
 				E9A3FFC92A6590F20041E43E /* BountyViewController.swift in Sources */,
+				E9D7D0822A66AF0C003557C2 /* DetailViewController.swift in Sources */,
 				E9A3FFB52A653C970041E43E /* AppDelegate.swift in Sources */,
 				E9A3FFB72A653C970041E43E /* SceneDelegate.swift in Sources */,
 			);
