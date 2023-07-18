@@ -9,13 +9,24 @@ import UIKit
 
 class BountyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let nameList = ["brook", "chopper", "franky", "luffy", "nami", "robbin", "sanji", "zoro"]
+    let nameList = ["brook", "chopper", "franky", "luffy", "nami", "robin", "sanji", "zoro"]
     let bountyList = [33000000, 50, 44000000, 3000000000, 80000000, 77000000, 1200000000]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            let vc = segue.destination as? DetailViewController
+            
+            if let index = sender as? Int {
+                vc?.name = nameList[index]
+                vc?.bounty = bountyList[index]
+            }
+        }
     }
     
     // UITableViewDatasource
@@ -39,7 +50,7 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
     // UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("--> \(indexPath.row)")
-        performSegue(withIdentifier: "showDetail", sender: nil)
+        performSegue(withIdentifier: "showDetail", sender: indexPath.row)
     }
 }
 
