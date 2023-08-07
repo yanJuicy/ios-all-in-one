@@ -12,8 +12,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var bountyLabel: UILabel!
     @IBOutlet weak var imgView: UIImageView!
     
-    var name: String?
-    var bounty: Int?
+    let viewModel = DetailViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,14 +20,22 @@ class DetailViewController: UIViewController {
     }
     
     func updateUI() {
-        if let name = self.name, let bounty = self.bounty {
-            imgView.image = UIImage(named: "\(name).jpg")
-            nameLabel.text = name
-            bountyLabel.text = "\(bounty)"
+        if let bountyInfo = viewModel.bountyInfo {
+            imgView.image = bountyInfo.image
+            nameLabel.text = bountyInfo.name
+            bountyLabel.text = "\(bountyInfo.bounty)"
         }
     }
     
     @IBAction func close(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+}
+
+class DetailViewModel {
+    var bountyInfo: BountyInfo?
+    
+    func update(model: BountyInfo) {
+        bountyInfo = model
     }
 }
