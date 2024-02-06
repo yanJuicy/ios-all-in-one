@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  BountyList
 //
-//  Created by YANJU1CY 🇰🇷 on 2023/07/17.
+//  Created by a on 2024/02/02.
 //
 
 import UIKit
