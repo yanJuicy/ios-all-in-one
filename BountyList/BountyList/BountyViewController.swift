@@ -23,7 +23,7 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
     
     // 몇개
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return bountyList.count
     }
     
     // 어떻게 표현
@@ -43,6 +43,7 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
     // 어떻게 할거야
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("--> \(indexPath.row)")
+        performSegue(withIdentifier: "showDetail", sender: nil)
     }
 }
 

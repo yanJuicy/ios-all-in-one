@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,28 +13,28 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BountyViewController" customModule="BountyList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8gq-XH-oLS">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="200" id="i3p-Yq-7xj" customClass="ListCell" customModule="BountyList" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="428" height="200"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="200" id="i3p-Yq-7xj" customClass="ListCell" customModule="BountyList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i3p-Yq-7xj" id="puI-NM-I6y">
-                                            <rect key="frame" x="0.0" y="0.0" width="428" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sXl-gZ-NSV">
-                                                    <rect key="frame" x="15.000000000000007" y="16" width="117.66666666666669" height="168"/>
+                                                    <rect key="frame" x="15" y="16" width="117.5" height="168"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="sXl-gZ-NSV" secondAttribute="height" multiplier="7:10" id="R18-Vk-JY8"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luffy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rj2-Pr-Ue2">
-                                                    <rect key="frame" x="257" y="55" width="61" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Luffy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rj2-Pr-Ue2">
+                                                    <rect key="frame" x="181" y="40" width="213" height="45"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -50,8 +50,8 @@
                                                 <constraint firstItem="sXl-gZ-NSV" firstAttribute="height" secondItem="puI-NM-I6y" secondAttribute="height" multiplier="0.89" constant="-10" id="AdU-V4-i5o"/>
                                                 <constraint firstItem="Rj2-Pr-Ue2" firstAttribute="centerY" secondItem="puI-NM-I6y" secondAttribute="centerY" constant="-30" id="Cjd-aM-FLu"/>
                                                 <constraint firstItem="sXl-gZ-NSV" firstAttribute="centerY" secondItem="puI-NM-I6y" secondAttribute="centerY" id="KuV-UH-cug"/>
-                                                <constraint firstItem="Rj2-Pr-Ue2" firstAttribute="leading" secondItem="sXl-gZ-NSV" secondAttribute="trailing" constant="124.33333333333331" id="Ola-6K-Niq"/>
-                                                <constraint firstAttribute="trailing" secondItem="Rj2-Pr-Ue2" secondAttribute="trailing" constant="110" id="V8J-IL-vUA"/>
+                                                <constraint firstItem="Rj2-Pr-Ue2" firstAttribute="leading" secondItem="sXl-gZ-NSV" secondAttribute="trailing" constant="100" id="Ola-6K-Niq"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rj2-Pr-Ue2" secondAttribute="trailing" constant="80" id="V8J-IL-vUA"/>
                                                 <constraint firstItem="qq3-qf-dQk" firstAttribute="centerX" secondItem="Rj2-Pr-Ue2" secondAttribute="centerX" id="aPv-by-sbp"/>
                                                 <constraint firstItem="qq3-qf-dQk" firstAttribute="top" secondItem="Rj2-Pr-Ue2" secondAttribute="bottom" constant="14" id="aWa-4M-sOr"/>
                                                 <constraint firstItem="sXl-gZ-NSV" firstAttribute="leading" secondItem="puI-NM-I6y" secondAttribute="leading" constant="15" id="l6F-XS-OVf"/>
@@ -79,13 +79,49 @@
                             <constraint firstItem="8gq-XH-oLS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n2D-1l-MTM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="NJ5-Kx-KfO" kind="presentation" identifier="showDetail" id="8Je-si-kaF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="528.5046728971962" y="97.840172786177106"/>
+            <point key="canvasLocation" x="527.536231884058" y="97.767857142857139"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="QFD-Eb-oKY">
+            <objects>
+                <viewController id="NJ5-Kx-KfO" customClass="DetailViewController" customModule="BountyList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5KL-rb-dze">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vu-2g-tQE">
+                                <rect key="frame" x="348" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="D7s-hm-dBt"/>
+                                    <constraint firstAttribute="height" constant="50" id="De8-Rj-cL8"/>
+                                </constraints>
+                                <state key="normal" image="close_ic"/>
+                                <connections>
+                                    <action selector="close:" destination="NJ5-Kx-KfO" eventType="touchUpInside" id="hfS-Fe-Q1V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ThC-De-RFb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ThC-De-RFb" firstAttribute="trailing" secondItem="4Vu-2g-tQE" secondAttribute="trailing" constant="16" id="Ne1-2a-xJB"/>
+                            <constraint firstItem="4Vu-2g-tQE" firstAttribute="top" secondItem="ThC-De-RFb" secondAttribute="top" constant="20" id="zRw-Wb-cK3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d0F-W0-1Rn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280" y="98"/>
         </scene>
     </scenes>
     <resources>
+        <image name="close_ic" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
